@@ -1,26 +1,6 @@
 
 #include "PCH.h"
 
-/**
-* STARFIELD MOD
-* Increase Max Characters - Ship, Settlement, and Item Names
-*
-* DESCRIPTION:
-* This plugin works by overwriting the opcode which
-* writes to the address found at this pointer:
-* - ["Starfield.exe" + 0x058F1378]
-* - [Chain + 0x10]
-* - [Chain + 0x78]
-* - [Chain + 0x1D0]
-* - [Chain + 0x130]
-* - [Chain + 0xB8]
-* - [Chain + 0x1A0]
-* - [Chain + 0xC8] = Final Address
-*
-* We inject the opcode at:
-* - "Starfield.exe" + 0xFFDBA3
-**/
-
 namespace ShipCharCount
 {
     struct Prolog : Xbyak::CodeGenerator
@@ -120,10 +100,6 @@ namespace
 	}
 }
 
-/**
-* For preload plugins:
-void SFSEPlugin_Preload(SFSE::LoadInterface* a_sfse);
-**/
 
 DLLEXPORT bool SFSEAPI SFSEPlugin_Load(const SFSE::LoadInterface* a_sfse)
 {
