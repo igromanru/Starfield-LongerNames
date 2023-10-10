@@ -46,7 +46,7 @@ namespace
             prolog.ready();
             Epilog epilog{};
             epilog.ready();
-            
+
             const auto caveHookHandle = AddCaveHook(
                 patchAddress,
                 { 0, 7 }, 
