@@ -41,6 +41,9 @@ You can change the maximum allowed names length in the [b]SF-LongerNames.ini[/b]
 The value must be between 5 and 255.
 3. Save the file and start the game again.
 
+[size=4][u][b]Compatibility[/b][/u][/size]
+Obviously the mod is not compatible with [url=https://www.nexusmods.com/starfield/mods/1635]Longer Ship Outpost and Item Names[/url]. Which is currently outdated anyway, but if you're playing on the older version of the game or it will be fixed in the future, you shouldn't try to use both mods at the same time.
+
 [size=2][u][b]Source Code[/b][/u][/size]
 [url=https://github.com/igromanru/Starfield-LongerNames/tree/fixed]My GitHub fork[/url]
 
